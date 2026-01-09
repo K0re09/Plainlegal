@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalis - Simplificador Jurídico</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <canvas id="canvas-bg"></canvas>
+
+    <header>
+        <div class="logo">
+            <ion-icon name="scale-outline" class="logo-icon"></ion-icon>
+            Legalis
+        </div>
+        <nav>
+            <!-- Optional Nav Items could go here -->
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-text">
+            <h1>Descomplique o Juridiquês</h1>
+            <p class="subtitle">
+                Traduza contratos e termos legais para uma linguagem clara e acessível em segundos.
+                Entenda o que você assina.
+            </p>
+        </div>
+
+        <div class="converter-container">
+            <!-- Input Section -->
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-title">Documento Original</span>
+                    <span class="badge">Jurídico</span>
+                </div>
+                <textarea id="input-text"
+                    placeholder="Cole aqui o seu contrato, termo ou acordo de trabalho..."></textarea>
+                <div style="margin-top: 0.5rem; font-size: 0.85rem; text-align: right;">
+                    <a href="#" id="load-demo" style="color: var(--accent-gold); text-decoration: none;">Carregar
+                        Exemplo</a>
+                </div>
+            </div>
+
+            <!-- Output Section -->
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-title">Explicação Simplificada</span>
+                    <span class="badge">Português Claro</span>
+                </div>
+                <div id="output-area">
+                    <span style="color: #64748b;">A tradução aparecerá aqui...</span>
+                </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="controls-area">
+                <button id="translate-btn" class="btn-primary">
+                    <ion-icon name="flash-outline"></ion-icon> Simplificar Agora
+                </button>
+            </div>
+        </div>
+
+        <div class="disclaimer-banner">
+            <div class="disclaimer-icon">
+                <ion-icon name="warning-outline"></ion-icon>
+            </div>
+            <div class="disclaimer-text">
+                <h4>Aviso Legal Importante</h4>
+                <p>
+                    Esta ferramenta utiliza inteligência artificial para fins informativos e educacionais.
+                    <strong>Ela não substitui a consultoria de um advogado.</strong>
+                    Sempre consulte um profissional qualificado antes de tomar decisões baseadas em documentos legais.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
